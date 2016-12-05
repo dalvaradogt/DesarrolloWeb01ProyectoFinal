@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1", width="device-width">
+
+  	<title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <!-- ================================= 2.1. Logo SVG  ======================================
+      Logo SVG utiliza algunas de las herramientas SVG en línea para diseñar el logo con tus iniciales, utiliza los colores y formas que prefieras.
+      herramienta utilizada https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html
+    -->
+    <svg>
+      <image width="250px" height="150px" xlink:href="Imagenes/LogoSVG.svg" alt="Curriculum vitae Dennys Alvarado" ></image>
+    </svg>
+    <!-- ================================ tambien se puede usar el  atributo IMG =========================================
+      <img src="Imagenes/LogoSVG.svg" width="250px" height="150px" alt="Curriculum Vitae Dennys Alvarado">
+    -->
+
+    <!-- ================================= 2.2. Titulo  ======================================
+      aquí te sugerimos coloques el título de tu documento, "Hoja de Vida" o "Curriculum Vitae" o "Resumen Curricular". utilizando la etiqueta h1.
+    -->
+    <h1> Curriculum Vitae</h1>
+
+    <!-- ================================= 2.3. Datos Personales  ======================================
+      indica tus nombres, apellidos, fecha y lugar de nacimiento utilizando las etiquetas h2 y h3.
+    -->
+    <h2>Dennys Alvarado </h2>
+    <h3> Junio de 1982 en la ciudad de Guatemala</h3>
+
+    <!-- ================================= 2.4. Enlaces de menú básico  ======================================
+      para enlazar las tres páginas que tiene tu proyecto: Inicio (index.html), educación (educacion.html), experiencia (experiencia.html).
+    -->
+    <navbar>
+
+        <li> <a href="index.html">Inicio</a> </li>
+      	<li><a href="educacion.html">Educacion</a> </li>
+      	<li><a href="experiencia.html">Experiencia Laboral</a> </li>
+
+    </navbar>
+
+    <!-- ================================= 2.5. Titulo   ======================================
+      Incorpora un título en h2 Educación..
+    -->
+    <h2>Educacion</h2>
+
+    <!-- ================================= 2.6. Tabla  ======================================
+      Codifica una Tabla de 4 columnas (Año, Institución, Lugar, ¿Culminó?) por 3 filas (o más si deseas) para indicar los datos sobre tus certificados, cursos, título, entre otros.
+    -->
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institucion</th>
+          <th>Lugar</th>
+          <th>Culmino?</th>
+        </tr>
+      </thead>
+      <tbody>
+				<tr>
+					<td>2014</td>
+					<td>Curso Virtual</td>
+					<td>www.cursovirtual.com</td>
+					<td>si</td>
+				</tr>
+				<tr>
+					<td>2015</td>
+					<td>Curso virtual</td>
+					<td>www.nuggets.com</td>
+					<td>si</td>
+				</tr>
+    </table>
+    <!-- ================================= 2.7. Formulario ======================================
+    Dibuja un Formulario titulado "Agregar Estudios" con los siguientes elementos:
+      Una lista desplegable para el Año.
+      Una caja de entrada de texto para Institución, agrega la validación de campo requerido.
+      Una caja de entrada de texto largo para Lugar.
+      Un radio button para las alternativas de ¿Culminó?.
+      Un botón "Enviar"..
+    -->
+
+    <h3> Agregar Estudios </h3>
+    <form action="">
+      <p>
+  			<label for="anho">Año: </label>
+  			<br>
+  			<select name="anho">
+  				<option value="1">2016</option>
+  				<option value="2">2015</option>
+  				<option value="3">2014</option>
+          <option value="4">2013</option>
+          <option value="5">2012</option>
+          <option value="6">2011</option>
+          <option value="7">....</option>
+  			</select>
+  		</p>
+		<p>
+			<label for="institucion">Institucion de estudio</label>
+			<br>
+			<input type="text" name="institucion" placeholder="Ej: Universidad" required>
+		</p>
+
+    <p>
+			<label for="lugar">Lugar: </label>
+			<br>
+			<textarea name="lugar" id="" cols="30" rows="3"></textarea>
+		</p>
+
+		<p>
+			<label for="culmino">Culmino?: </label>
+			<input type="radio" name="culmino"> Si
+			<input type="radio" name="culmino"> No
+		</p>
+
+		<p>
+			<input type="submit" value="Enviar">
+		</p>
+		</form>
+
+    <!-- ================================= 2.8. Pie de Página  ======================================
+      en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes sociales o dirección.
+    -->
+<footer>
+  ===================================================<br>
+  <h2> Contacto</h2>
+  Correo Electronico: <a href="mailto:dennys@cursonextu.com.gt?subject=ContactoCV">dennys@cursonextu.com.gt</a> <br>
+  Telefono: +(502) 3232-9292<br>
+  Direccion: 13 calle 9-23 zona 8, ciudad de Guatemala <br>
+  Facebook: <a href="https://www.facebook.com" target="_blank">facebook.com/DennysNextu.com<br>
+  ===================================================
+</footer>
+    </body>
+</html>
